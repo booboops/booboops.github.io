@@ -10,7 +10,7 @@
     
     <title>
         
-            Hello World | 
+            利用YCSB测试MySQL | 
         
         Magic Number
     </title>
@@ -27,7 +27,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="booboops">
     <meta name="description" content="null">
-    <meta name="keywords" content="null">
+    <meta name="keywords" content="null,blog">
 
     <!--iOS -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -48,9 +48,9 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Hello World | Magic Number">
+    <meta property="og:title" content="利用YCSB测试MySQL | Magic Number">
     <meta property="og:description" content="null">
-    
+    <meta property="og:article:tag" content="blog"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -258,7 +258,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Quick-Start"><span class="post-toc-number">1.</span> <span class="post-toc-text">Quick Start</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Create-a-new-post"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Create a new post</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Run-server"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Run server</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Generate-static-files"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Generate static files</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Deploy-to-remote-sites"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#编译安装YCSB"><span class="post-toc-number">1.</span> <span class="post-toc-text">编译安装YCSB</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Step-1"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Step 1</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Step-2"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Step 2</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Step-3"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Step 3</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#运行YCSB"><span class="post-toc-number">2.</span> <span class="post-toc-text">运行YCSB</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Step-1-1"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Step 1</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Step-2-1"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">Step 2</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Step-3-1"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">Step 3</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Step-4"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">Step 4</span></a></li></ol></li></ol>
 
         <!--
         <li class="mdl-menu__item">
@@ -294,7 +294,7 @@
         
     
             <p class="article-headline-p">
-                Hello World
+                利用YCSB测试MySQL
             </p>
         </div>
 
@@ -313,7 +313,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>booboops</strong>
-        <span>3月 13, 2017</span>
+        <span>2月 18, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -334,7 +334,7 @@
         </button>
         <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
             <li class="mdl-menu__item">在其它设备中阅读本文章</li>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACYklEQVR42u3aQZKDMAwEQP7/6d0HpEhGkjEk1T5tEZa4OdiONMffT48DDw8PDw8PDw/vYbwjHqePe7nn9f7k0/fX87nh4eHh7eF9WGqDexJ29fm9/8XDw8PbyTtbcM/uqcImW0gyNzw8PLxv4eXL+vs78+/Fw8PD+15eb7qFieLh4eE9npf84K9OsTrdm2steHh4eDEvbzLt/3trfw8PDw8v4K1qa02mPm+24eHh4e3k5QvxhJ1sNnnx4sPBHQ8PD+9WXr5V5M2w+baxuEqNh4eH1+JVF+uk6fWhZBB/muPx8PDw9vCSTaJabO2xJ5/i4eHh7eflj85Jp0feOFzV3KLw8PDwNvKSQ20vTFANbOUvLooO4OHh4S3l5dvAPBSVvMS8+FuuteDh4eEt5VVDAPMWWvVFJDA8PDy8PbzqFyfH8epSPtoGkl8MeHh4eEt5q0q3+egVLy4MXeHh4eEVeauiV72Cb/Uw3Qxd4eHh4S3l5Y3/SVwgP7j3vh0PDw9vJ68XI+iVD+ahgSjChYeHh3cxr1AejcsW1eu9gzseHh7e03jViVanNQkfjIoReHh4eEt5vaBqdeHOt6UkGouHh4d3Ly9vz8/LtfnGkL9KPDw8vD286shJPWQeHWhWqfHw8PDGvCMeE8A8ijoKXeHh4eFdwMsX+kmwIHkF1bjqsgYYHh4eXos3j41Oigj5RvXhteLh4eE9mHfdxlC9joeHh/ddvLzZ32uVJa04PDw8vLt4vYZWORRVbIZVkXh4eHh7eNUSQBR+KrbTqpGCS/p7eHh4eAHv9wYeHh4eHh4eHt4Dxj8SpD7a4l6nLwAAAABJRU5ErkJggg==">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC1UlEQVR42u3awU7kQAwEUP7/p9kr0gqosrPL0P1yGk1C0q9HomQ7b+9XHm/Y2NjY2NjY2NjYL8l+i4+P139667+u/+z7rz/nT0nWjI2NjX0D+5t//cES8/vMFr1ZMzY2NvY97Dy0kohq75ncf7VmbGxsbOzymuQpScglgYqNjY2N/WyAJW2pbxpAwVlsbGxs7E2DJgFsBgnJc/9rLw0bGxv75dmzQe/Pfv6x+TY2Njb2i7Hbo3hMfE0+BlitHBsbG/tQ9teN+9mi2xb/rARqxw/Y2NjYp7LbRSRxlQx021ja/DzY2NjY97DzMiMPsA2yfW2orsCwsbGxD2Xnw928zTRrP7Xbio2NjX0nu32RMS9FknJitpJ207GxsbHvYSewWZjl2zq7z2oqgo2NjX0Quy0/8oZU3pzaFCGr3MbGxsb+5ew2Wt7L46kwa0sabGxs7HvYm4bRbCi7iajZcBobGxv7BvaGmg+M8zFt295a9dKwsbGxj2DXkTDiteD9+AEbGxv7NvZmiJs3mPLv87/6JnSxsbGxr2FvBgb5CzRPtf6LdWJjY2Mfzc4b+pvXa5LC5h9uEDY2NvbR7FlbZxNp+XC3LjmemopgY2Nj/yr2PpbaxlM+eJg9PWoqYWNjYx/BTqKrLUvyjduUK/VZbGxs7AvYLbUd0M42Lj+KUgQbGxv7OPaz5cQsZtrWVR5d2NjY2GezW3BLTQYJSTR+PQyIBh7Y2NjYh7LzG+URsi9sZkVI8coONjY29tHsfHhQvPgYb1x7Nn8WNjY29qnsffM9D6G2kMg/R9uKjY2NfTQ7L07yxv1sAJxE5mMBho2NjX0cO2nxb0qOzfd5U+mBqQg2Njb20ez2dcl8eNCODZJwxcbGxsZOyoYktHLYrIyJ4hYbGxv7AvZ+BDtr9ydB1f5U2NjY2Lex26IiX3p+drYp+RZgY2Njn8q+58DGxsbGxsbGxsZ+meMPiYcVR/I3WGsAAAAASUVORK5CYII=">
         </ul>
     
 
@@ -346,7 +346,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        
+        <a class="post_tag-link" href="/tags/blog/">blog</a>
     </ul>
     
 
@@ -362,7 +362,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Hello World&url=http://yoursite.com//2017/03/13/hello-world/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=利用YCSB测试MySQL&url=http://yoursite.com//2017/02/18/使用YCSB测试MySQL/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -371,7 +371,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Hello World&url=http://yoursite.com//2017/03/13/hello-world/index.html&via=booboops" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=利用YCSB测试MySQL&url=http://yoursite.com//2017/02/18/使用YCSB测试MySQL/index.html&via=booboops" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -380,7 +380,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2017/03/13/hello-world/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2017/02/18/使用YCSB测试MySQL/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -389,7 +389,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2017/03/13/hello-world/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2017/02/18/使用YCSB测试MySQL/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -398,7 +398,7 @@
 
     <!-- Share LinkedIn -->
     
-        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com//2017/03/13/hello-world/index.html&title=Hello World" target="_blank">
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com//2017/02/18/使用YCSB测试MySQL/index.html&title=利用YCSB测试MySQL" target="_blank">
             <li class="mdl-menu__item">
                 分享到 LinkedIn
             </li>
@@ -419,15 +419,23 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>YCSB（Yahoo! Cloud Serving Benchmark）是雅虎开源的一款基准测试工具，目标是通过开发框架和常用数据集，以用来测试不同的Key-Value存储和云服务的性能</p>
+<p>Github：<a href="https://github.com/brianfrankcooper/YCSB" target="_blank" rel="external">https://github.com/brianfrankcooper/YCSB</a><br>Wiki：<a href="https://github.com/brianfrankcooper/YCSB/wiki" target="_blank" rel="external">https://github.com/brianfrankcooper/YCSB/wiki</a><br>Latest version：<a href="https://github.com/brianfrankcooper/YCSB/releases/" target="_blank" rel="external">https://github.com/brianfrankcooper/YCSB/releases/</a></p>
+<h2 id="编译安装YCSB"><a href="#编译安装YCSB" class="headerlink" title="编译安装YCSB"></a>编译安装YCSB</h2><h3 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1"></a>Step 1</h3><p>安装JDK以及Maven，通过<code>mvn -v</code>查看版本信息<br>修改Maven源，在$MAVEN_HOME/conf/settings.xml文件里配置mirrors的子节点，在<code>&lt;mirrors&gt;</code>标签中添加以下部分</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;mirror&gt;</div><div class="line">    &lt;id&gt;alimaven&lt;/id&gt;</div><div class="line">    &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</div><div class="line">   	&lt;name&gt;aliyun maven&lt;/name&gt;</div><div class="line">	&lt;url&gt;http://maven.aliyun.com/nexus/content/repositories/central&lt;/url&gt;</div><div class="line">&lt;/mirror&gt;</div></pre></td></tr></table></figure>
+<h3 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h3><p>下载源码到本地<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/brianfrankcooper/YCSB.git</div></pre></td></tr></table></figure></p>
+<p>或者直接下载.zip文件解压</p>
+<h3 id="Step-3"><a href="#Step-3" class="headerlink" title="Step 3"></a>Step 3</h3><p>编译整个项目<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mvn package clean -DskipTests</div></pre></td></tr></table></figure></p>
+<p>若只针对单个数据库编译安装，可通过<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mvn -pl com.yahoo.ycsb:xxx-binding -am clean package -DskipTests</div></pre></td></tr></table></figure></p>
+<p>xxx 数据库类型<br>-DskipTests 跳过测试</p>
+<p>本文主要使用YCSB测试MySQL，应替换为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mvn -pl com.yahoo.ycsb:jdbc-binding -am clean package -DskipTests</div></pre></td></tr></table></figure></p>
+<p>编译完成后，jdbc目录下会创建一个叫做target的目录</p>
+<h2 id="运行YCSB"><a href="#运行YCSB" class="headerlink" title="运行YCSB"></a>运行YCSB</h2><h3 id="Step-1-1"><a href="#Step-1-1" class="headerlink" title="Step 1"></a>Step 1</h3><p>下载JDBC驱动<br>JDBC Driver for MySQL：<a href="https://www.mysql.com/products/connector/" target="_blank" rel="external">https://www.mysql.com/products/connector/</a></p>
+<h3 id="Step-2-1"><a href="#Step-2-1" class="headerlink" title="Step 2"></a>Step 2</h3><p>在MySQL中创建测试数据库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">CREATE DATABASE YCSB;</div></pre></td></tr></table></figure></p>
+<p>创建测试表<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">CREATE TABLE usertable(YCSB_KEY VARCHAR (255) PRIMARY KEY,</div><div class="line">    FIELD0 TEXT, FIELD1 TEXT,</div><div class="line">    FIELD2 TEXT, FIELD3 TEXT,</div><div class="line">    FIELD4 TEXT, FIELD5 TEXT,</div><div class="line">    FIELD6 TEXT, FIELD7 TEXT,</div><div class="line">    FIELD8 TEXT, FIELD9 TEXT);</div></pre></td></tr></table></figure></p>
+<h3 id="Step-3-1"><a href="#Step-3-1" class="headerlink" title="Step 3"></a>Step 3</h3><p>创建测试数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">bin/ycsb load jdbc -P workloads/workloada -p db.driver=com.mysql.jdbc.Driver </div><div class="line">-p db.url=jdbc:mysql://localhost:3306/YCSB -p db.user=xxx -p db.passwd=yyy </div><div class="line">-s -cp zzz</div></pre></td></tr></table></figure></p>
+<p>xxx 用户名<br>yyy 用户密码<br>zzz JDBC驱动所在位置的绝对路径</p>
+<h3 id="Step-4"><a href="#Step-4" class="headerlink" title="Step 4"></a>Step 4</h3><p>运行基准测试<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">bin/ycsb run jdbc -P workloads/workloada -p db.driver=com.mysql.jdbc.Driver </div><div class="line">-p db.url=jdbc:mysql://localhost:3306/YCSB -p db.user=xxx -p db.passwd=yyy </div><div class="line">-s -cp zzz</div></pre></td></tr></table></figure></p>
 
     
 
@@ -448,7 +456,7 @@
 <script>
     queue.offer(function() {
             var disqus_config = function () {
-                this.page.url = 'http://yoursite.com/2017/03/13/hello-world/index.html';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.url = 'http://yoursite.com/2017/02/18/使用YCSB测试MySQL/index.html';  // Replace PAGE_URL with your page's canonical URL variable
                 this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
             };
 
@@ -479,19 +487,19 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
+        <a href="/2017/02/21/HBase：Write-Ahead-Logging/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
-    
-        <a href="/2017/03/11/HDFS：NameNode/" id="post_nav-older" class="next-content">
-            旧篇
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-            </button>
-        </a>
     
 </nav>
 

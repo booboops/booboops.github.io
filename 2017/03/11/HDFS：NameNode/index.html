@@ -10,7 +10,7 @@
     
     <title>
         
-            归档: 2017 | 
+            HDFS：NameNode | 
         
         Magic Number
     </title>
@@ -48,7 +48,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档: 2017 | Magic Number">
+    <meta property="og:title" content="HDFS：NameNode | Magic Number">
     <meta property="og:description" content="null">
     
 
@@ -232,435 +232,309 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
     
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
 
-    <!-- Normal Post -->
-    
-        
-        
-            <!-- Paradox Thumbnail -->
-            <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HDFS：NameNode"><span class="post-toc-number">1.</span> <span class="post-toc-text">HDFS：NameNode</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#FSNamesystem"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">FSNamesystem</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#FSImage"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">FSImage</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#FSDirectory"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">FSDirectory</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#FSEditLog"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">FSEditLog</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#INode"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">INode</span></a></li></ol></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script>
+    var randomNum = Math.floor(Math.random() * 3 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/03/13/hello-world/">Hello World</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Welcome to Hexo
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/03/13/hello-world/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpeg" width="44px" height="44px" alt="booboops's avatar">
-            </div>
-            <div>
-                <strong>booboops</strong>
-                <span>3月 13, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-        
-        
-        
-    
-        
-        
-            <!-- Paradox Thumbnail -->
-            <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/03/11/HDFS：NameNode/">HDFS：NameNode</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/03/11/HDFS：NameNode/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpeg" width="44px" height="44px" alt="booboops's avatar">
-            </div>
-            <div>
-                <strong>booboops</strong>
-                <span>3月 11, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-        
-        
-        
-    
-        
-        
-            <!-- Paradox Thumbnail -->
-            <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/03/08/Spark：SQL原理/">Spark：SQL原理</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            整体性：将SQL的查询操作和Spark程序无缝衔接。Spark SQL通过分布式数据集RDD提供了结构化的查询，并且Python, Scala, J...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/03/08/Spark：SQL原理/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpeg" width="44px" height="44px" alt="booboops's avatar">
-            </div>
-            <div>
-                <strong>booboops</strong>
-                <span>3月 08, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-        
-        
-        
-    
-        
-        
-            <!-- Paradox Thumbnail -->
-            <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/02/26/Spark：Lineage机制/">Spark：Lineage机制</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            RDD在Lineage依赖方面分为两种：窄依赖(Narrow Dependencies)与宽依赖(Wide Dependencies,源码中称为Sh...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/02/26/Spark：Lineage机制/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpeg" width="44px" height="44px" alt="booboops's avatar">
-            </div>
-            <div>
-                <strong>booboops</strong>
-                <span>2月 26, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-        
-        
-        
-    
-        
-        
-            <!-- Paradox Thumbnail -->
-            <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/02/25/Spark：内存管理机制/">Spark：内存管理机制</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            从Spark 1.6版本推出以后，Spark采用了统一内存管理模型。通过spark.memory.useLegacyMode配置，可以控制选择的内存...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/02/25/Spark：内存管理机制/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpeg" width="44px" height="44px" alt="booboops's avatar">
-            </div>
-            <div>
-                <strong>booboops</strong>
-                <span>2月 25, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-        
-        
-        
-    
-        
-        
-            <!-- Paradox Thumbnail -->
-            <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/02/21/HBase：Write-Ahead-Logging/">HBase：Write-Ahead Logging</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            预写式日志（WAL）是一种实现事务日志的标准方法。WAL的中心思想是对数据的修改必须在这些操作记录在日志之后。不需要在每次事务提交的时候都把数据写入...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/02/21/HBase：Write-Ahead-Logging/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpeg" width="44px" height="44px" alt="booboops's avatar">
-            </div>
-            <div>
-                <strong>booboops</strong>
-                <span>2月 21, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-        
-        
-        
-    
-        
-        
-            <!-- Paradox Thumbnail -->
-            <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/02/18/使用YCSB测试MySQL/">利用YCSB测试MySQL</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            YCSB（Yahoo! Cloud Serving Benchmark）是雅虎开源的一款基准测试工具，目标是通过开发框架和常用数据集，以用来测试不同...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/02/18/使用YCSB测试MySQL/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpeg" width="44px" height="44px" alt="booboops's avatar">
-            </div>
-            <div>
-                <strong>booboops</strong>
-                <span>2月 18, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-        
-        
-        
-    
-
-    
-
-    
-        <script>
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 3 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').css('background-image', 'url(' + '/img/random/material-' + randomNum + '.jpeg' + ')')
-
-        locatePost = locatePost.next();
-    }
+    $('.post_thumbnail-random').css('background-image', 'url(' + '/img/random/material-' + randomNum + '.jpeg' + ')');
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                HDFS：NameNode
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpeg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>booboops</strong>
+        <span>3月 11, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">devices other</i>
+            <span class="visuallyhidden">devices other</span>
+        </button>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+            <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACbUlEQVR42u3aQW7DQAgFUN//0u22UuT4A/ZkGj2vqnbi+HkBFDh+vvo68PDw8PDw8PDwNuMd8ZV86u9fX8+f/Vz9lotP4eHh4S3hXYTakzMJ6ewhXs/k3/v+DB4eHt5KXhLoq2feY+YpBA8PD++/8JLAXT05f614eHh4O/OqTYQkMSRJAg8PD283XjXE56E/aVhs0WvBw8PDi3n5kGn9z0vne3h4eHgBr7zSNG7F9hoWzaUrPDw8vAd4eSCeAJJkk/z+fQmOh4eHt4aXDPurzYV5OyNfPsDDw8P7FK/60NVQng+08lHZ6avEw8PDW8IrfDimztuy+evAw8PDW8mrBuhqYzdZvare7aJ8x8PDw1vOq7Zl88FYcodqEmpuRuDh4eENeD3GXSF+3rAo/8eAh4eHN+ZVC9ZeWyG/Q97CaG5G4OHh4d3Km4TvJCXkiwi9oRoeHh7eSl5vfFVNJ/li1ug14eHh4T3M661SJYB8BSFv/jaXrvDw8PAe4FUTQ16U52kmX2Jo7pTh4eHh3cSbFMqT5kIz6CcvFw8PD28hbx7u81bCpDRvtnHx8PDwbuXlTdukIJ6kkBvSFR4eHt5CXi+sJyVy3v7IR194eHh4e/LywVg1xPfau1FSwcPDw3uYV7166wXVEVfeFC5sRuDh4eHdxDvia4KfF83NpSs8PDy8x3jJQydfkxfBk9L5IsHg4eHhLeRNxk7Vl9JrRkTrs3h4eHgb86oFcf64vSYyHh4e3s68XqOh2sho3gcPDw9vIS8pjucj/7vO4OHh4X2WV20B5AlgjqkmCTw8PLyned934eHh4eHh4eHhbXD9AosMzkpeOmwRAAAAAElFTkSuQmCC">
+        </ul>
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=HDFS：NameNode&url=http://yoursite.com//2017/03/11/HDFS：NameNode/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=HDFS：NameNode&url=http://yoursite.com//2017/03/11/HDFS：NameNode/index.html&via=booboops" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2017/03/11/HDFS：NameNode/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2017/03/11/HDFS：NameNode/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com//2017/03/11/HDFS：NameNode/index.html&title=HDFS：NameNode" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 LinkedIn
+            </li>
+        </a>
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h3 id="HDFS：NameNode"><a href="#HDFS：NameNode" class="headerlink" title="HDFS：NameNode"></a>HDFS：NameNode</h3><p>负责管理命名空间，维护HDFS的目录树以及文件的元数据信息，包括了两个关键的表：</p>
+<ol>
+<li>文件到数据块的映射关系（Namespace）：存放在内存和磁盘上</li>
+<li>数据块到DataNode的映射关系：每次启动NameNode重新建立</li>
+</ol>
+<p>提供了三类接口：</p>
+<ol>
+<li>org.apache.hadoop.hdfs.protocol.ClientProtocol：客户端用来请求HDFS服务</li>
+<li>org.apache.hadoop.hdfs.server.protocol.DatanodeProtocol：向DataNode存放数据块</li>
+<li>org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol：rebalancing进程和Secondary NameNode用来获取NameNode的状态</li>
+</ol>
+<p>启动过程如下：<br><img src="../HDFS_NameNode_startup.jpg" width="700" height="500" align="center/"></p>
+<h4 id="FSNamesystem"><a href="#FSNamesystem" class="headerlink" title="FSNamesystem"></a>FSNamesystem</h4><p>HDFS实际上是通过FSNamesystem进行管理 ，主要的作用是：</p>
+<ol>
+<li>建立BlockManager, DatanodeManager, DelegationTokens, LeaseManager</li>
+<li>用于处理修改和检查Namespace的RPC请求</li>
+<li>有关数据块信息的report会交给BlockManager处理</li>
+<li>对文件系统进行修改的操作交给FSDirectory处理</li>
+<li>log的相关操作交给FSEditLog去完成</li>
+</ol>
+<p>维护了五个主要的数据结构：</p>
+<ol>
+<li>有效的filename到blocklist的映射</li>
+<li>有效的block集合</li>
+<li>每个block对应的DataNode列表，存储在内存中，动态的根据DataNode发来的report进行重建</li>
+<li>DataNode与其上的block的映射</li>
+<li>采用LRU cache算法来更新DataNode</li>
+</ol>
+<h4 id="FSImage"><a href="#FSImage" class="headerlink" title="FSImage"></a>FSImage</h4><p>FSImage主要用来进行检查点（根据dfs.namenode.checkpoint.period和dfs.namenode.checkpoint.txns决定）操作以及对Namespace的编辑和日志记录，通常在启动时会被先加载到内存中然后，再执行FSEditLog中记录的操作，从而保证内存中的元数据和实际的元数据同步。</p>
+<p>Non-HA模式下，Secondary NameNode定期通过HTTP的方式从NameNode上获取FSEditLog，然后合并到FSImage，并将FSImage发回给NameNode用以替换NameNode上保存的FSImage</p>
+<p>HA模式下，通过共享系统NFS或者bookeeper将数据写入共享存储系统（包含多个JournalNode），standby对其监听并将同步改动（FSEditLog）合并到FSImage</p>
+<h4 id="FSDirectory"><a href="#FSDirectory" class="headerlink" title="FSDirectory"></a>FSDirectory</h4><p>FSDirectory和FSNamesystem都用来管理和维护Namespace的状态。FSDirectory是位于内存的一种数据结构，FSDirectory的所有操作都发生在内存。而FSNamesystem主要是用来将操作持久化到磁盘</p>
+<h4 id="FSEditLog"><a href="#FSEditLog" class="headerlink" title="FSEditLog"></a>FSEditLog</h4><p>用于记录日常对Namespace改动的操作，在对文件进行修改时，只有修改成功后，才会写入log，当log写入成功后再更新内存中的元数据信息。</p>
+<p>Hadoop中EditLog拥有以下五种状态：</p>
+<p>  private enum State {<br>    UNINITIALIZED,<br>    BETWEEN_LOG_SEGMENTS,<br>    IN_SEGMENT,<br>    OPEN_FOR_READING,<br>    CLOSED;<br>  }  </p>
+<p>在Non-HA模式下，EditLog开始处于UNITIALIZED的状态，一旦完成初始化，EditLog的状态变为了IN_SEGMENT的状态并可以进行修改。在对EditLog进行roll或者保存Namespace时，进入BETWEEN_LOG_SEGMENTS的状态，表示之前的segment已经关闭，但是新的还没有开始</p>
+<p>在HA模式下，EditLog开始同样处于UNITIALIZED的状态，完成初始化以后，处于standby状态的NameNode会一直保持OPEN_FOR_READING的状态。调用某命令将NameNode转化为active的过程中，状态先会变为CLOSED，然后变为BETWEEN_LOG_SEGMENTS，在开始写入EditLog时，状态变为IN_SEGMENT ，之后的过程和Non-HA模式下一样。</p>
+<h4 id="INode"><a href="#INode" class="headerlink" title="INode"></a>INode</h4><p>Inode主要维护文件ID，权限，所属用户，组，属性，以及修改的相关信息等</p>
+
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+    <!-- 使用 DISQUS -->
+    <div id="disqus-comment">
+        <div id="disqus_thread"></div>
+<script>
+    queue.offer(function() {
+            var disqus_config = function () {
+                this.page.url = 'http://yoursite.com/2017/03/11/HDFS：NameNode/index.html';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//booboops129.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+    </div>
+    <style>
+        #disqus-comment{
+            background-color: #eee;
+            padding: 2pc;
+        }
+    </style>
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2017/03/13/hello-world/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/03/08/Spark：SQL原理/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
